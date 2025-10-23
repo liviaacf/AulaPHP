@@ -1,11 +1,9 @@
-body
-{
+body{
     margin: 0;
     padding: 0;
 }
 
-h1
-{
+h1{
     margin: 0;
     background-color: rgb(96,0,0);
     color: white;
@@ -13,8 +11,7 @@ h1
     padding: 30px;
 }
 
-.menu
-{
+.menu{
     display: flex;
     justify-content: space-between;
 
@@ -23,19 +20,19 @@ h1
     color: white;
 }
 
-.menu a
-{
+.menu a{
     color: white;
 }
 
-.menu a:hover
-{
+.menu a:hover{
     text-decoration-color: orange;
 }
 
-.conteudo
-{
+.conteudo{
     width: 700px;
     border: 1px solid rgb(96,0,0);
     border-radius: 10px;
+    margin: 10px auto;
+    padding: 10px;
+    box-shadow: 5px 5px 10px red;
 }
