@@ -9,6 +9,7 @@
     <a href="#">Consultar</a>
     <a href="professor_cadastro.php">Prof. Cadastrar</a>
     <a href="#">Prof. Consultar</a>
+    <a href="curso_cadastro">Cadastrar Curso</a>
     </div>
 
     </div>

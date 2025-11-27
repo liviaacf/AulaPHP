@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Tempo de geração: 13-Nov-2025 às 16:49
+-- Tempo de geração: 27-Nov-2025 às 16:57
 -- Versão do servidor: 8.0.31
 -- versão do PHP: 8.0.26
 
@@ -20,8 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `aulabd`
 --
-CREATE DATABASE IF NOT EXISTS `aulabd` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
-USE `aulabd`;
 
 -- --------------------------------------------------------
 
@@ -35,6 +33,20 @@ CREATE TABLE IF NOT EXISTS `alunos` (
   `nome` varchar(50) NOT NULL,
   `cidade` varchar(50) NOT NULL,
   `estado` varchar(2) NOT NULL,
+  PRIMARY KEY (`codigo`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `cursos`
+--
+
+DROP TABLE IF EXISTS `cursos`;
+CREATE TABLE IF NOT EXISTS `cursos` (
+  `codigo` int NOT NULL AUTO_INCREMENT,
+  `curso` varchar(50) NOT NULL,
+  `coordenador` varchar(50) NOT NULL,
   PRIMARY KEY (`codigo`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 COMMIT;

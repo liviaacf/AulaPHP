@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cadastro concluído</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
     <?php include "menu.php" ?>
@@ -17,8 +18,8 @@
         {
             include "conexao.php";
 
-            $nome = $_REQUEST["curso"];
-            $cidade = $_REQUEST["coordenador"];
+            $curso = $_REQUEST["curso"];
+            $coordenador = $_REQUEST["coordenador"];
 
             $sql = "insert into cursos (curso, coordenador) values (:curso, :coordenador)";
 
@@ -27,7 +28,7 @@
             $result->bindValue(":coordenador", $coordenador);
             $result->execute();
 
-            echo "Aluno cadastrado com sucesso!<br>";
+            echo "Curso cadastrado com sucesso!<br>";
         }
 
     ?>
